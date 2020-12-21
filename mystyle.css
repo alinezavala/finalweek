@@ -1,1 +1,129 @@
-
+body {
+	background: #FFF;
+}
+.contentbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.fullsunhead{
+	width: 300px;
+	height: 300px;
+	background:   #ffecc2;
+	position: relative;
+	border-radius: 150px;
+	left: 570px;
+	top: 200px;
+}
+.eye {
+    width: 50px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    top: 100px;
+		border-radius: 150px;
+}
+.left.eye { left: 22%; }
+.right.eye { right: 22%; }
+.pupil {
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+		border-radius: 150px;
+		animation-name: look-about;
+		animation-duration: 3s;
+		animation-play-state: running;
+		animation-iteration-count: infinite;
+}
+.eyebrow {
+    width: 55px;
+    height: 10px;
+    background: #835C3B;
+    position: absolute;
+    top: 70px;
+}
+.left.eyebrow { left: 20%; }
+.right.eyebrow { right: 20%; }
+.nose {
+position: relative;
+height: 30px;
+width: 50px;
+top: 155px;
+left: 128px;
+border-radius: 0 0 90px 90px;
+background: #FFDC95;
+}
+.mole{
+	height: 3px;
+	width: 3px;
+	position: relative;
+	left: 88px;
+	top: 180px;
+	border-radius: 150px;
+	background: #635945;
+}
+.mouth {
+position: relative;
+height: 50px;
+width: 115px;
+top: 100px;
+left: 665px;
+border-radius: 0 0 90px 90px;
+background: #fc8163;
+}
+.mouthopen {
+position: relative;
+height: 38px;
+width: 100px;
+top: 55px;
+left: 673px;
+border-radius: 0 0 90px 90px;
+background: #000;
+animation-name: open-close;
+animation-duration: 3s;
+animation-play-state: running;
+animation-iteration-count: infinite;
+}
+.hairacross {
+    width: 200px;
+    height: 25px;
+    background: #835C3B;
+    position: absolute;
+    top: 210px;
+		left: 628px;
+}
+.hairright {
+    width: 50px;
+    height: 350px;
+    background: #835C3B;
+    position: absolute;
+    top: 210px;
+		left: 826px;
+}
+.hairleft {
+    width: 50px;
+    height: 350px;
+    background: #835C3B;
+    position: absolute;
+    top: 210px;
+		left: 580px;
+}
+@keyframes look-about {
+0% {left: 20px;}
+5% {left:30px;}
+30% {left: 30px;}
+35% {left: 10px;}
+60% {left: 10px;}
+65% {left: 20px;}
+100% {left: 20px;}
+}
+@keyframes open-close{
+  79% {height:5px;}
+	80% {height:0px;}
+	85%{height:5px;}
+	{height:5px;}
+}
